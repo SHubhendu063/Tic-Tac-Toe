@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(tic-tac-toe-background.jpg);
+}
+
+.container {
+    height: 40%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
+    /* height: 6rem;
+    width: 6rem; */
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ded8d8f0;
+    font-size: 2rem;
+    color: rgb(1 100 52);
+    border-radius: 1rem;
+    height: 4.6rem;
+    width: 4.6rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    border: none;
+}
+
+.items:hover {
+    cursor: pointer;
+}
+
+.refresh-btn {
+    margin-top: 2rem;
+    height: 2rem;
+    width: 5.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 0.6rem;
+    -webkit-border-radius: 0.6rem;
+    -moz-border-radius: 0.6rem;
+    -ms-border-radius: 0.6rem;
+    -o-border-radius: 0.6rem;
+    background-color: rgb(37 209 255);
+    color: #000;
+}
+
+.refresh-btn:hover {
+    background-color: rgb(97, 60, 60);
+    color: #fff;
+    border: 2px solid rgb(97, 60, 60);
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
+}
+
+.wincontainer {
+    margin-top: 0.5rem;
+    height: 4rem;
+    width: 20%;
+    border-radius: 1rem;
+    background-color: #76fff1;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+/* @media (max-width:1276px) {
+
+    .container {
+        row-gap: 5px;
+    }
+
+
+} */
